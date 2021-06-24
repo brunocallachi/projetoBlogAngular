@@ -1,0 +1,9 @@
+#img-bg{
+    background-image: url('http://www.avmpmpr.com.br/site/wp-content/uploads/2018/11/cadastro.png');
+  
+    min-height: 695px;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
