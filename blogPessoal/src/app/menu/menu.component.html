@@ -7,10 +7,10 @@
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
       <ul class="navbar-nav mr-auto d-flex align-items-center">
         <li class="nav-item active">
-          <img src="https://avatars.githubusercontent.com/u/83188981?v=4" alt="imagem do Bruno" width="50px" height="50px" class="img-fluid rounded-circle">
+          <img src="{{foto}}" alt="imagem do Bruno" width="50px" height="50px" class="img-fluid rounded-circle">
         </li>
         <li class="nav-item pl-3">
-         <p class="m-0 font-weight-bold text-white fs-16">Bruno</p>
+         <p class="m-0 font-weight-bold text-white fs-16"> Olá, {{nome}}</p>
         </li>
         <li class="nav-item pl-3">
             <a href="">
@@ -21,7 +21,7 @@
 
       <ul class="navbar-nav m-auto d-flex align-items-center">
         <li class="nav-item pl-3">
-            <a class="m-0 font-weight-bold text-white fs-16">Sair</a>
+            <a (click)='sair()' class="m-e font-weight-bold text-white fs-16">Sair</a>
            </li>
       </ul>
     
