@@ -15,21 +15,22 @@ export class TemaComponent implements OnInit {
   listaTemas: Tema[]
 
   constructor(
-    private router: Router,TemaService
+    private router: Router,
     private temaService: TemaService
    
   ) { }
 
-  ngOnInit() {
+  ngOnInit()  {
     if(environment.token == ''){
+      
       this.router.navigate(['/entrar'])
     }
-
+    this.temaService.refreshToken()
     this.findAllTemas()
   }
 
   findAllTemas(){
-    this.temaService.getAllTema().subscribe((resp: Tema)=>{
+    this.temaService.getAllTema().subscribe((resp: Tema[])=>{
       this.listaTemas = resp
     })
   }
